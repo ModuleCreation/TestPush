@@ -2,14 +2,18 @@ PODS:
   - JCore (1.1.7)
   - JPush (3.0.8):
     - JCore (~> 1.1.7)
+  - testPush (0.1.1):
+    - JPush
 
 DEPENDENCIES:
   - JPush
+  - testPush (= 0.1.1)
 
 SPEC CHECKSUMS:
   JCore: f7459c81c135281a874a6beafdd321666adcc834
   JPush: 9574d072cc37e93fa293ba69b43ce763c440943a
+  testPush: 262cb600ca142980f3019ed4c08e8f329725d746
 
-PODFILE CHECKSUM: 4671cf44bc4759968e30535c05a5244839cf2545
+PODFILE CHECKSUM: 327e81a7dcc853d0dec5435da3c742f2a51d082c
 
 COCOAPODS: 1.4.0

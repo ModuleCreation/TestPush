@@ -1,7 +1,7 @@
 use_frameworks!
 
 target 'testPush_Example' do
-    # pod 'testPush', :path => '../'
+    pod 'testPush', '0.1.1'
 
   pod 'JPush'
 end
