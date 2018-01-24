@@ -6,8 +6,8 @@
 //Copyright © 2018年 TPQuietBro. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
-
-@interface TPPush : NSObject
-
+#import <UIKit/UIKit.h>
+@interface TPPush : NSObject<UIApplicationDelegate>
+@property (nonatomic,strong) NSDictionary *userInfo;
+- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions;
 @end

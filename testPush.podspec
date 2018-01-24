@@ -1,7 +1,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'testPush'
-  s.version          = '0.1.0'
+  s.version          = '0.1.1'
   s.summary          = 'A short description of testPush.'
 
 
@@ -15,8 +15,8 @@ TODO: Add long description of the pod here.
   s.source           = { :git => 'https://github.com/ModuleCreation/TestPush.git', :tag => s.version.to_s }
 
   s.ios.deployment_target = '8.0'
-
-  s.source_files = 'testPush/Classes/**/*'
   
+  s.source_files = 'testPush/Classes/**/*'
+  s.static_framework = true
   s.dependency 'JPush'
 end
