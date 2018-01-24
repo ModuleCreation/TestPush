@@ -23,7 +23,6 @@
 		627C8321CDEC2E5C9D62455E /* Pods_testPush_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F747847702D89C3C94540DE /* Pods_testPush_Example.framework */; };
 		71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */; };
 		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
-		AFCE3AC92017525F00295361 /* TPPush.m in Sources */ = {isa = PBXBuildFile; fileRef = AFCE3AC82017525F00295361 /* TPPush.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,8 +63,6 @@
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8F747847702D89C3C94540DE /* Pods_testPush_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_testPush_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A7CD7AE425390CBFB2420977 /* Pods_testPush_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_testPush_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		AFCE3AC72017525F00295361 /* TPPush.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TPPush.h; sourceTree = "<group>"; };
-		AFCE3AC82017525F00295361 /* TPPush.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TPPush.m; sourceTree = "<group>"; };
 		C577B45A3140FBC4C6D40D16 /* Pods-testPush_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-testPush_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-testPush_Example/Pods-testPush_Example.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -133,8 +130,6 @@
 			children = (
 				6003F59C195388D20070C39A /* TPAppDelegate.h */,
 				6003F59D195388D20070C39A /* TPAppDelegate.m */,
-				AFCE3AC72017525F00295361 /* TPPush.h */,
-				AFCE3AC82017525F00295361 /* TPPush.m */,
 				873B8AEA1B1F5CCA007FD442 /* Main.storyboard */,
 				6003F5A5195388D20070C39A /* TPViewController.h */,
 				6003F5A6195388D20070C39A /* TPViewController.m */,
@@ -354,7 +349,6 @@
 				6003F59E195388D20070C39A /* TPAppDelegate.m in Sources */,
 				6003F5A7195388D20070C39A /* TPViewController.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
-				AFCE3AC92017525F00295361 /* TPPush.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
