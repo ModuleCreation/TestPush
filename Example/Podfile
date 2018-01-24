@@ -1,7 +1,7 @@
 use_frameworks!
 
 target 'testPush_Example' do
-    pod 'testPush', '0.1.1'
+    pod 'testPush', '0.1.2'
 
   pod 'JPush'
 end

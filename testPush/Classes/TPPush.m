@@ -19,33 +19,7 @@
 
 @end
 @implementation TPPush
-- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    UNUserNotificationCenter *center = [UNUserNotificationCenter currentNotificationCenter];
-    center.delegate = self;
-    //获取用户的推送授权 iOS 10新方法
-    [center requestAuthorizationWithOptions:(UNAuthorizationOptionAlert + UNAuthorizationOptionSound)
-                          completionHandler:^(BOOL granted, NSError * _Nullable error) {}];
-    //获取当前的通知设置，UNNotificationSettings 是只读对象，readOnly，只能通过以下方法获取
-    [center getNotificationSettingsWithCompletionHandler:^(UNNotificationSettings * _Nonnull settings) {}];
-    
-    JPUSHRegisterEntity *entity = [[JPUSHRegisterEntity alloc] init];
-    entity.types = JPAuthorizationOptionAlert|JPAuthorizationOptionBadge|JPAuthorizationOptionSound;
-    [JPUSHService registerForRemoteNotificationConfig:entity delegate:self];
-    
-    [JPUSHService setupWithOption:launchOptions appKey:JpushAppKey_IDC
-                          channel:@"AppStore"
-                 apsForProduction:YES];
-    [JPUSHService registrationIDCompletionHandler:^(int resCode, NSString *registrationID) {
-        if(resCode == 0){
-            NSLog(@"registrationID获取成功：%@",registrationID);
-        }
-        else{
-            NSLog(@"registrationID获取失败，code：%d",resCode);
-        }
-    }];
-    [self addJpushNetworkStateObserver];
-    return YES;
-}
+
 #pragma mark - JPUSHRegisterDelegate
 // iOS 10 Support，当收到通知的时候触发这个方法
 - (void)jpushNotificationCenter:(UNUserNotificationCenter *)center willPresentNotification:(UNNotification *)notification withCompletionHandler:(void (^)(NSInteger))completionHandler {
